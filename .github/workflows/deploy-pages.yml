@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - claude/prepare-github-pages-011CUUVQobP6Q3YCY73j7BGL
   workflow_dispatch:
 
 permissions:
