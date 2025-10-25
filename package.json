@@ -12,7 +12,7 @@
     "web": "npx expo start --web",
     "build:android": "npx expo build:android",
     "build:ios": "npx expo build:ios",
-    "build:web": "npx expo build:web"
+    "build:web": "npx expo export --platform web"
   },
   "dependencies": {
     "@expo/webpack-config": "^19.0.0",

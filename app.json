@@ -49,7 +49,9 @@
       "favicon": "./assets/favicon.png",
       "name": "Quit Quest",
       "shortName": "QuitQuest",
-      "bundler": "metro"
+      "bundler": "metro",
+      "output": "static",
+      "publicPath": "/QuitQuest/"
     },
     "plugins": [
       "expo-font",

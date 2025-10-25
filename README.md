@@ -2,6 +2,8 @@
 
 > Transform your journey to quit smoking into an epic RPG adventure
 
+**[🎮 Try the Web App](https://quitquestdev.github.io/QuitQuest/)** | [📱 Coming Soon to App Stores](#deployment)
+
 QuitQuest is a gamified habit-breaking mobile and web application that helps users quit smoking by turning their recovery journey into an engaging RPG experience. Battle cravings, level up your character, complete daily quests, and track your progress as you become the hero of your own quit story.
 
 ## Features
@@ -189,16 +191,21 @@ We welcome contributions! Please follow these steps:
 
 ### GitHub Pages (Web Version)
 
-The web version of QuitQuest can be deployed to GitHub Pages:
+The web version of QuitQuest is automatically deployed to GitHub Pages:
 
-1. Build the web version:
+**Live Demo**: [https://quitquestdev.github.io/QuitQuest/](https://quitquestdev.github.io/QuitQuest/)
+
+**Deployment**:
+- Automatically deploys when changes are pushed to the `main` branch
+- GitHub Actions workflow builds the Expo web app and deploys to GitHub Pages
+- The built files are exported to the `dist/` directory
+
+**Manual Build**:
 ```bash
 npm run build:web
 ```
 
-2. The built files will be in the `web-build/` directory
-
-3. Deploy using the GitHub Actions workflow (automatically triggers on push to main)
+The web app runs directly in the browser with full React Native Web support.
 
 ### Mobile App Stores
 
