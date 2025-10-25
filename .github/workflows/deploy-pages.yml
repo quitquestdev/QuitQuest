@@ -39,7 +39,8 @@ jobs:
       - name: Build Expo web app
         run: npx expo export --platform web
         env:
-          EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY: ${{ secrets.STRIPE_PUBLISHABLE_KEY }}
+          EXPO_NO_TELEMETRY: 1
+          EXPO_OFFLINE: 1
 
       - name: Add .nojekyll file
         run: touch dist/.nojekyll

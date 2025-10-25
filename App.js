@@ -9,7 +9,6 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, LogBox, Platform } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
-import { StripeProvider } from '@stripe/stripe-react-native';
 import { UserProvider } from './src/context/UserContext';
 import { GameProvider } from './src/context/GameContext';
 import { ThemeProvider } from './src/context/ThemeContext';
@@ -22,8 +21,6 @@ import AchievementService from './src/services/achievementService';
 
 // Ignore specific warnings
 LogBox.ignoreLogs(['AsyncStorage has been extracted']);
-
-const STRIPE_PUBLISHABLE_KEY = process.env.EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY || '';
 
 export default function App() {
   const [isInitialized, setIsInitialized] = useState(false);
@@ -64,27 +61,25 @@ export default function App() {
   }
 
   return (
-    <StripeProvider publishableKey={STRIPE_PUBLISHABLE_KEY}>
-      <ThemeProvider>
-        <UserProvider>
-          <GameProvider onAchievementUnlocked={showNextAchievement}>
-            <View style={styles.container}>
-              <StatusBar style="light" backgroundColor={RPG_THEME.colors.darkBlue} />
-              <NavigationContainer>
-                <MainNavigator />
-              </NavigationContainer>
-              
-              {currentAchievement && (
-                <AchievementNotification
-                  achievement={currentAchievement}
-                  onComplete={handleNotificationComplete}
-                />
-              )}
-            </View>
-          </GameProvider>
-        </UserProvider>
-      </ThemeProvider>
-    </StripeProvider>
+    <ThemeProvider>
+      <UserProvider>
+        <GameProvider onAchievementUnlocked={showNextAchievement}>
+          <View style={styles.container}>
+            <StatusBar style="light" backgroundColor={RPG_THEME.colors.darkBlue} />
+            <NavigationContainer>
+              <MainNavigator />
+            </NavigationContainer>
+
+            {currentAchievement && (
+              <AchievementNotification
+                achievement={currentAchievement}
+                onComplete={handleNotificationComplete}
+              />
+            )}
+          </View>
+        </GameProvider>
+      </UserProvider>
+    </ThemeProvider>
   );
 }
 
