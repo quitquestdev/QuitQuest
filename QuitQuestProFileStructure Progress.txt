@@ -1,0 +1,78 @@
+quit-quest/
+├── App.js
+├── app.json
+├── package.json
+├── babel.config.js
+├── .env.example
+├── .gitignore
+├── eas.json
+├── assets/
+│   ├── icon.png
+│   ├── splash.png
+│   ├── adaptive-icon.png
+│   └── fonts/
+│       └── pixel-font.ttf
+├── src/
+│   ├── components/
+│   │   ├── AchievementCard.js
+│   │   ├── AchievementDetailModal.js---
+│   │   ├── AchievementNotification.js---
+│   │   ├── BackgroundWrapper.js---
+│   │   ├── CravingButton.js---
+│   │   ├── DailyQuests.js---
+│   │   ├── LoadingSpinner.js
+│   │   ├── MotivationCard.js---
+│   │   ├── PixelButton.js
+│   │   ├── ProgressChart.js---
+│   │   ├── QuestDashboard.js---
+│   │   ├── QuickStats.js---
+│   │   ├── RPGPanel.js
+│   │   └── StatusBar.js---
+│   ├── screens/
+│   │   ├── AchievementsScreen.js
+│   │   ├── AuthScreen.js
+│   │   ├── BattleScreen.js
+│   │   ├── DashboardScreen.js
+│   │   ├── ProfileScreen.js
+│   │   ├── SettingsScreen.js
+│   │   ├── SetupScreen.js
+│   │   ├── ShopScreen.js
+│   │   ├── StatsScreen.js*----
+│   │   └── UpgradeScreen.js*----
+│   ├── navigation/
+│   │   ├── MainNavigator.js
+│   │   └── TabNavigator.js
+│   ├── context/
+│   │   ├── GameContext.js
+│   │   ├── ThemeContext.js---
+│   │   └── UserContext.js
+│   ├── services/
+│   │   ├── achievementService.js
+│   │   ├── adMobService.js---
+│   │   ├── authService.js---
+│   │   ├── dataService.js---
+│   │   ├── firebaseConfig.js
+│   │   ├── initializeServices.js---
+│   │   ├── notificationService.js---
+│   │   └── stripeService.js---
+│   ├── theme/
+│   │   ├── backgrounds.js---
+│   │   └── rpgTheme.js
+│   ├── utils/
+│   │   ├── achievementUtils.js
+│   │   ├── calculations.js
+│   │   ├── constants.js---
+│   │   ├── dateHelpers.js---
+│   │   └── storage.js---
+│   └── data/
+│       ├── achievements.js
+│       ├── items.js
+│       ├── motivations.js--
+│       └── quests.js--
+└── backend/
+    ├── server.js---
+    ├── package.json
+    └── routes/
+        ├── auth.js---
+        ├── data.js---
+        └── payments.js---
