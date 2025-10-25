@@ -2,7 +2,7 @@
  * Achievement Service
  *
  * Copyright (c) 2022 Jonathan Klimoski
- * Licensed under the MIT License
+ * All Rights Reserved
  */
 
 class AchievementService {

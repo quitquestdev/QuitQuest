@@ -2,7 +2,7 @@
  * Calculation Utilities
  *
  * Copyright (c) 2022 Jonathan Klimoski
- * Licensed under the MIT License
+ * All Rights Reserved
  */
 
 export const calculateMoneySaved = (days, cigarettesPerDay, packCost) => {

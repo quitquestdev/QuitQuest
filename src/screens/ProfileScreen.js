@@ -2,7 +2,7 @@
  * ProfileScreen - User profile and statistics display
  *
  * Copyright (c) 2022 Jonathan Klimoski
- * Licensed under the MIT License
+ * All Rights Reserved
  */
 
 import React, { useState } from 'react';

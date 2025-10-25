@@ -235,9 +235,9 @@ EXPO_PUBLIC_ADMOB_ANDROID_APP_ID=...
 
 ## License
 
-Copyright © 2022 Jonathan Klimoski
+Copyright © 2022 Jonathan Klimoski. All Rights Reserved.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This software is proprietary and confidential. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited without express written permission from Jonathan Klimoski.
 
 ## Support
 

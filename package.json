@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Transform your journey to quit smoking into an epic RPG adventure",
   "author": "Jonathan Klimoski",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "npx expo start",

@@ -2,7 +2,7 @@
  * Stats Screen - Detailed statistics
  *
  * Copyright (c) 2022 Jonathan Klimoski
- * Licensed under the MIT License
+ * All Rights Reserved
  */
 
 import React from 'react';

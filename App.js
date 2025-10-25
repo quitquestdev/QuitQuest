@@ -2,7 +2,7 @@
  * QuitQuest - Transform your journey to quit smoking into an epic RPG adventure
  *
  * Copyright (c) 2022 Jonathan Klimoski
- * Licensed under the MIT License
+ * All Rights Reserved
  */
 
 import React, { useEffect, useState } from 'react';

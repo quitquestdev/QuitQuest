@@ -2,7 +2,7 @@
  * User Context - Manages user authentication and profile
  *
  * Copyright (c) 2022 Jonathan Klimoski
- * Licensed under the MIT License
+ * All Rights Reserved
  */
 
 import React, { createContext, useContext, useState } from 'react';
