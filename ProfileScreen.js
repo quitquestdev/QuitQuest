@@ -1,3 +1,10 @@
+/**
+ * ProfileScreen - User profile and statistics display
+ *
+ * Copyright (c) 2022 Jonathan Klimoski
+ * Licensed under the MIT License
+ */
+
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, Alert } from 'react-native';
 import BackgroundWrapper from '../components/BackgroundWrapper';
@@ -69,16 +76,40 @@ const ProfileScreen = () => {
       <ScrollView style={styles.container}>
         {/* Hero Profile */}
         <RPGPanel variant="gold" style={styles.heroPanel}>
+          <View style={styles.heroHeader}>
+            <Text style={styles.heroIcon}>{getCharacterIcon()}</Text>
+            <View style={styles.heroInfo}>
+              <Text style={styles.heroName}>{userData.heroName}</Text>
+              <Text style={styles.heroTitle}>Level {gameData.level} Hero</Text>
+              <Text style={styles.heroEmail}>{userData.email}</Text>
+            </View>
+          </View>
+        </RPGPanel>
+
+        {/* Quick Stats */}
+        <RPGPanel style={styles.statsPanel}>
+          <Text style={styles.sectionTitle}>QUEST PROGRESS</Text>
+
+          <View style={styles.statRow}>
+            <Text style={styles.statLabel}>Days Smoke-Free</Text>
+            <Text style={styles.statValue}>{stats.daysSmokeFree}</Text>
+          </View>
+
+          <View style={styles.statRow}>
+            <Text style={styles.statLabel}>Money Saved</Text>
+            <Text style={styles.statValue}>${stats.moneySaved.toFixed(2)}</Text>
+          </View>
+
           <View style={styles.statRow}>
             <Text style={styles.statLabel}>Cigarettes Avoided</Text>
             <Text style={styles.statValue}>{stats.cigarettesAvoided}</Text>
           </View>
-          
+
           <View style={styles.statRow}>
             <Text style={styles.statLabel}>Health Recovery</Text>
             <Text style={styles.statValue}>{stats.healthRecovered}%</Text>
           </View>
-          
+
           <View style={styles.statRow}>
             <Text style={styles.statLabel}>Current Streak</Text>
             <Text style={styles.statValue}>{stats.currentStreak} days</Text>
@@ -237,28 +268,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ProfileScreen; style={styles.heroHeader}>
-            <Text style={styles.heroIcon}>{getCharacterIcon()}</Text>
-            <View style={styles.heroInfo}>
-              <Text style={styles.heroName}>{userData.heroName}</Text>
-              <Text style={styles.heroTitle}>Level {gameData.level} Hero</Text>
-              <Text style={styles.heroEmail}>{userData.email}</Text>
-            </View>
-          </View>
-        </RPGPanel>
-
-        {/* Quick Stats */}
-        <RPGPanel style={styles.statsPanel}>
-          <Text style={styles.sectionTitle}>QUEST PROGRESS</Text>
-          
-          <View style={styles.statRow}>
-            <Text style={styles.statLabel}>Days Smoke-Free</Text>
-            <Text style={styles.statValue}>{stats.daysSmokeFree}</Text>
-          </View>
-          
-          <View style={styles.statRow}>
-            <Text style={styles.statLabel}>Money Saved</Text>
-            <Text style={styles.statValue}>${stats.moneySaved.toFixed(2)}</Text>
-          </View>
-          
-          <View
+export default ProfileScreen;
