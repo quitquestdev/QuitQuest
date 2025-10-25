@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Transform your journey to quit smoking into an epic RPG adventure",
   "author": "Jonathan Klimoski",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "npx expo start",
@@ -12,28 +12,23 @@
     "web": "npx expo start --web",
     "build:android": "npx expo build:android",
     "build:ios": "npx expo build:ios",
-    "build:web": "npx expo build:web"
+    "build:web": "npx expo export --platform web"
   },
   "dependencies": {
-    "@expo/webpack-config": "^19.0.0",
-    "@react-native-async-storage/async-storage": "^2.2.0",
-    "@react-navigation/bottom-tabs": "^7.1.14",
-    "@react-navigation/native": "^7.1.14",
-    "@react-navigation/stack": "^7.4.2",
-    "@stripe/stripe-react-native": "^0.39.0",
-    "expo": "~53.0.17",
-    "expo-constants": "~16.0.2",
-    "expo-font": "~12.1.0",
-    "expo-status-bar": "~2.2.3",
-    "firebase": "^11.10.0",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "react-native": "0.79.5",
-    "react-native-gesture-handler": "~2.20.2",
-    "react-native-reanimated": "~3.16.1",
-    "react-native-safe-area-context": "^4.12.0",
-    "react-native-screens": "^4.0.0",
-    "react-native-web": "~0.19.13"
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@react-navigation/bottom-tabs": "^6.5.11",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/stack": "^6.3.20",
+    "expo": "~51.0.0",
+    "expo-constants": "~16.0.0",
+    "expo-status-bar": "~1.12.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.74.5",
+    "react-native-gesture-handler": "~2.16.1",
+    "react-native-safe-area-context": "4.10.5",
+    "react-native-screens": "3.31.1",
+    "react-native-web": "~0.19.10"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
