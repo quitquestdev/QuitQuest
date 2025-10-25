@@ -42,6 +42,9 @@ jobs:
           EXPO_NO_TELEMETRY: 1
           EXPO_OFFLINE: 1
 
+      - name: Fix asset paths for GitHub Pages subpath
+        run: sed -i 's|src="/_expo/|src="/QuitQuest/_expo/|g' dist/index.html
+
       - name: Add .nojekyll file
         run: touch dist/.nojekyll
 
