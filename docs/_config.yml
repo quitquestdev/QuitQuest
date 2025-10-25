@@ -1,0 +1,6 @@
+# GitHub Pages Configuration
+title: QuitQuest
+description: Transform your journey to quit smoking into an epic RPG adventure
+theme: jekyll-theme-cayman
+show_downloads: true
+google_analytics:
