@@ -483,4 +483,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines and coding sta
 
 ## License
 
+Copyright © 2022 Jonathan Klimoski
+
 MIT License - See LICENSE file for details.

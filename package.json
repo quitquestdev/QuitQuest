@@ -1,6 +1,9 @@
 {
   "name": "quit-quest",
   "version": "1.0.0",
+  "description": "Transform your journey to quit smoking into an epic RPG adventure",
+  "author": "Jonathan Klimoski",
+  "license": "MIT",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "npx expo start",
@@ -35,5 +38,18 @@
   "devDependencies": {
     "@babel/core": "^7.20.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quitquestdev/QuitQuest.git"
+  },
+  "keywords": [
+    "quit-smoking",
+    "gamification",
+    "rpg",
+    "health",
+    "habit-tracker",
+    "react-native",
+    "expo"
+  ],
   "private": true
 }

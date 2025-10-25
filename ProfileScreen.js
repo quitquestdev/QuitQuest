@@ -1,3 +1,10 @@
+/**
+ * ProfileScreen - User profile and statistics display
+ *
+ * Copyright (c) 2022 Jonathan Klimoski
+ * Licensed under the MIT License
+ */
+
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, Alert } from 'react-native';
 import BackgroundWrapper from '../components/BackgroundWrapper';
